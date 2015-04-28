@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0148B237-B6F8-4F5A-BD05-A8BB150D8AAD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TheCsprojLibrary</RootNamespace>
+    <AssemblyName>TheCsprojLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Build" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="TypedProject.cs" />
+    <Compile Include="TypedProjectDisplayProxy.cs" />
+    <Compile Include="ItemCollection.cs" />
+    <Compile Include="ItemCollectionDisplayProxy.cs" />
+    <Compile Include="ItemTypeBase.cs" />
+    <Compile Include="ItemTypes\AppConfigFileDestination.cs" />
+    <Compile Include="ItemTypes\AppConfigFileDestinationDisplayProxy.cs" />
+    <Compile Include="ItemTypes\AppDesigner.cs" />
+    <Compile Include="ItemTypes\AppDesignerDisplayProxy.cs" />
+    <Compile Include="ItemTypes\ApplicationDefinition.cs" />
+    <Compile Include="ItemTypes\ApplicationDefinitionDisplayProxy.cs" />
+    <Compile Include="ItemTypes\ApplicationManifest.cs" />
+    <Compile Include="ItemTypes\ApplicationManifestDisplayProxy.cs" />
+    <Compile Include="ItemTypes\AppxHashUri.cs" />
+    <Compile Include="ItemTypes\AppxHashUriDisplayProxy.cs" />
+    <Compile Include="ItemTypes\AppxManifest.cs" />
+    <Compile Include="ItemTypes\AppxManifestDisplayProxy.cs" />
+    <Compile Include="ItemTypes\AppxManifestFileNameQuery.cs" />
+    <Compile Include="ItemTypes\AppxManifestFileNameQueryDisplayProxy.cs" />
+    <Compile Include="ItemTypes\AppxManifestImageFileNameQuery.cs" />
+    <Compile Include="ItemTypes\AppxManifestImageFileNameQueryDisplayProxy.cs" />
+    <Compile Include="ItemTypes\AppxManifestMetadata.cs" />
+    <Compile Include="ItemTypes\AppxManifestMetadataDisplayProxy.cs" />
+    <Compile Include="ItemTypes\AppxReservedFileName.cs" />
+    <Compile Include="ItemTypes\AppxReservedFileNameDisplayProxy.cs" />
+    <Compile Include="ItemTypes\AppxSystemBinary.cs" />
+    <Compile Include="ItemTypes\AppxSystemBinaryDisplayProxy.cs" />
+    <Compile Include="ItemTypes\AvailableItemName.cs" />
+    <Compile Include="ItemTypes\AvailableItemNameDisplayProxy.cs" />
+    <Compile Include="ItemTypes\BootstrapperPackage.cs" />
+    <Compile Include="ItemTypes\BootstrapperPackageDisplayProxy.cs" />
+    <Compile Include="ItemTypes\BuiltProjectOutputGroupKeyOutput.cs" />
+    <Compile Include="ItemTypes\BuiltProjectOutputGroupKeyOutputDisplayProxy.cs" />
+    <Compile Include="ItemTypes\BundleResource.cs" />
+    <Compile Include="ItemTypes\BundleResourceDisplayProxy.cs" />
+    <Compile Include="ItemTypes\Class1.cs" />
+    <Compile Include="ItemTypes\Clean.cs" />
+    <Compile Include="ItemTypes\CleanDisplayProxy.cs" />
+    <Compile Include="ItemTypes\Compile.cs" />
+    <Compile Include="ItemTypes\CompileDisplayProxy.cs" />
+    <Compile Include="ItemTypes\Content.cs" />
+    <Compile Include="ItemTypes\ContentDisplayProxy.cs" />
+    <Compile Include="ItemTypes\DebugSymbolsProjectOutputGroupOutput.cs" />
+    <Compile Include="ItemTypes\DebugSymbolsProjectOutputGroupOutputDisplayProxy.cs" />
+    <Compile Include="ItemTypes\DeployManifest.cs" />
+    <Compile Include="ItemTypes\DeployManifestDisplayProxy.cs" />
+    <Compile Include="ItemTypes\DocFileItem.cs" />
+    <Compile Include="ItemTypes\DocFileItemDisplayProxy.cs" />
+    <Compile Include="ItemTypes\DocumentationProjectOutputGroupOutput.cs" />
+    <Compile Include="ItemTypes\DocumentationProjectOutputGroupOutputDisplayProxy.cs" />
+    <Compile Include="ItemTypes\EmbeddedResource.cs" />
+    <Compile Include="ItemTypes\EmbeddedResourceDisplayProxy.cs" />
+    <Compile Include="ItemTypes\EntityDeploy.cs" />
+    <Compile Include="ItemTypes\EntityDeployDisplayProxy.cs" />
+    <Compile Include="ItemTypes\FinalDocFile.cs" />
+    <Compile Include="ItemTypes\FinalDocFileDisplayProxy.cs" />
+    <Compile Include="ItemTypes\Folder.cs" />
+    <Compile Include="ItemTypes\FolderDisplayProxy.cs" />
+    <Compile Include="ItemTypes\FxCopRuleAssemblies.cs" />
+    <Compile Include="ItemTypes\FxCopRuleAssembliesDisplayProxy.cs" />
+    <Compile Include="ItemTypes\IntermediateAssembly.cs" />
+    <Compile Include="ItemTypes\IntermediateAssemblyDisplayProxy.cs" />
+    <Compile Include="ItemTypes\None.cs" />
+    <Compile Include="ItemTypes\NoneDisplayProxy.cs" />
+    <Compile Include="ItemTypes\PackageFiles.cs" />
+    <Compile Include="ItemTypes\PackageFilesDisplayProxy.cs" />
+    <Compile Include="ItemTypes\PackageSource.cs" />
+    <Compile Include="ItemTypes\PackageSourceDisplayProxy.cs" />
+    <Compile Include="ItemTypes\Page.cs" />
+    <Compile Include="ItemTypes\PageDisplayProxy.cs" />
+    <Compile Include="ItemTypes\PlatformVersionDescription.cs" />
+    <Compile Include="ItemTypes\PlatformVersionDescriptionDisplayProxy.cs" />
+    <Compile Include="ItemTypes\ProjectCapability.cs" />
+    <Compile Include="ItemTypes\ProjectCapabilityDisplayProxy.cs" />
+    <Compile Include="ItemTypes\ProjectReference.cs" />
+    <Compile Include="ItemTypes\ProjectReferenceDisplayProxy.cs" />
+    <Compile Include="ItemTypes\PropertyPageSchema.cs" />
+    <Compile Include="ItemTypes\PropertyPageSchemaDisplayProxy.cs" />
+    <Compile Include="ItemTypes\Reference.cs" />
+    <Compile Include="ItemTypes\ReferenceDisplayProxy.cs" />
+    <Compile Include="ItemTypes\Resource.cs" />
+    <Compile Include="ItemTypes\ResourceDisplayProxy.cs" />
+    <Compile Include="ItemTypes\SDKReference.cs" />
+    <Compile Include="ItemTypes\SDKReferenceDisplayProxy.cs" />
+    <Compile Include="ItemTypes\Service.cs" />
+    <Compile Include="ItemTypes\ServiceDisplayProxy.cs" />
+    <Compile Include="ItemTypes\ServiceReferenceMetadataStorage.cs" />
+    <Compile Include="ItemTypes\ServiceReferenceMetadataStorageDisplayProxy.cs" />
+    <Compile Include="ItemTypes\TargetPlatform.cs" />
+    <Compile Include="ItemTypes\TargetPlatformDisplayProxy.cs" />
+    <Compile Include="ItemTypes\TypeScriptCompile.cs" />
+    <Compile Include="ItemTypes\TypeScriptCompileDisplayProxy.cs" />
+    <Compile Include="ItemTypes\UpToDateCheckOutput.cs" />
+    <Compile Include="ItemTypes\UpToDateCheckOutputDisplayProxy.cs" />
+    <Compile Include="ItemTypes\WCFMetadata.cs" />
+    <Compile Include="ItemTypes\WCFMetadataDisplayProxy.cs" />
+    <Compile Include="ItemTypes\WCFMetadataStorage.cs" />
+    <Compile Include="ItemTypes\WCFMetadataStorageDisplayProxy.cs" />
+    <Compile Include="ItemTypes\WebPublishExtnsionsToExcludeItem.cs" />
+    <Compile Include="ItemTypes\WebPublishExtnsionsToExcludeItemDisplayProxy.cs" />
+    <Compile Include="ItemTypes\XamlBuildTaskTypeGenerationExtensionName.cs" />
+    <Compile Include="ItemTypes\XamlBuildTaskTypeGenerationExtensionNameDisplayProxy.cs" />
+    <Compile Include="ItemTypes\XamlIntermediateAssembly.cs" />
+    <Compile Include="ItemTypes\XamlIntermediateAssemblyDisplayProxy.cs" />
+    <Compile Include="ItemTypes\_ApplicationManifestFinal.cs" />
+    <Compile Include="ItemTypes\_ApplicationManifestFinalDisplayProxy.cs" />
+    <Compile Include="ItemTypes\_DebugSymbolsIntermediatePath.cs" />
+    <Compile Include="ItemTypes\_DebugSymbolsIntermediatePathDisplayProxy.cs" />
+    <Compile Include="ItemTypes\_DebugSymbolsOutputPath.cs" />
+    <Compile Include="ItemTypes\_DebugSymbolsOutputPathDisplayProxy.cs" />
+    <Compile Include="ItemTypes\_DeploymentManifestEntryPoint.cs" />
+    <Compile Include="ItemTypes\_DeploymentManifestEntryPointDisplayProxy.cs" />
+    <Compile Include="ItemTypes\_DeploymentManifestIconFile.cs" />
+    <Compile Include="ItemTypes\_DeploymentManifestIconFileDisplayProxy.cs" />
+    <Compile Include="ItemTypes\_ExplicitReference.cs" />
+    <Compile Include="ItemTypes\_ExplicitReferenceDisplayProxy.cs" />
+    <Compile Include="ItemTypes\_IISApplicationPool.cs" />
+    <Compile Include="ItemTypes\_IISApplicationPoolDisplayProxy.cs" />
+    <Compile Include="ItemTypes\_IntermediateOutputPathItem.cs" />
+    <Compile Include="ItemTypes\_IntermediateOutputPathItemDisplayProxy.cs" />
+    <Compile Include="ItemTypes\_MSDeployArchiveDir.cs" />
+    <Compile Include="ItemTypes\_MSDeployArchiveDirDisplayProxy.cs" />
+    <Compile Include="ItemTypes\_MSDeployPackageFile.cs" />
+    <Compile Include="ItemTypes\_MSDeployPackageFileDisplayProxy.cs" />
+    <Compile Include="ItemTypes\_MSDeployPackageLocation.cs" />
+    <Compile Include="ItemTypes\_MSDeployPackageLocationDisplayProxy.cs" />
+    <Compile Include="ItemTypes\_OutputPathItem.cs" />
+    <Compile Include="ItemTypes\_OutputPathItemDisplayProxy.cs" />
+    <Compile Include="ItemTypes\_ResolveComReferenceCache.cs" />
+    <Compile Include="ItemTypes\_ResolveComReferenceCacheDisplayProxy.cs" />
+    <Compile Include="ItemTypes\_UnmanagedRegistrationCache.cs" />
+    <Compile Include="ItemTypes\_UnmanagedRegistrationCacheDisplayProxy.cs" />
+    <Compile Include="ItemTypes\_WPPSupports.cs" />
+    <Compile Include="ItemTypes\_WPPSupportsDisplayProxy.cs" />
+    <Compile Include="MetadataAccessor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyAccessor.cs" />
+    <Compile Include="TypeExtensions.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
