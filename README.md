@@ -1,6 +1,6 @@
 # TheCsprojLibrary
 
-Tired of guessing how to access your csproj properties? This library is for you!
+Tired of guessing how the names of your csproj properties? This library is for you!
 
 Usage:
 
